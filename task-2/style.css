@@ -1,0 +1,95 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7a434348;
+    margin: 0;
+    padding: 20px;
+    
+}
+
+header{
+    text-align:center
+}
+#contacts{
+   
+   place-items: center;
+}
+#contactForm {
+    margin:auto;
+    text-align: center; 
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    padding: 25px;
+    padding-left: 20px;
+    max-width:400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+input {
+    
+    transition: 0.3s ease-in-out;
+}label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    width: 100%;
+    padding: 10px ;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+input:focus {
+    border-color: #ff7eb3;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 117, 140, 0.5);
+}
+
+
+
+
+button {width: 100%; 
+    color: rgb(37, 23, 23);
+     border: none; 
+     padding: 10px; 
+     border-radius: 4px; 
+     cursor: pointer; 
+     margin-top: 15px;
+      font-family: 'Courier New', Courier, monospace; 
+      font-weight: bold;
+       font-size:18px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(255, 117, 140, 0.5);
+}
+
+
+
+#message {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+    padding:10px;
+}
+
+@media (max-width: 768px) {
+    #contactForm {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 16px;
+        max-width: 90%;
+    }
+}
