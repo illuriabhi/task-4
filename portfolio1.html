@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILLURI ABHI | Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="menu-icon" onclick="openSidebar()" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </span>
+            <div class="logo">PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mySidebar" class="sidebar">
+            <span class="closebtn" onclick="closeSidebar()" aria-label="Close menu">
+                <i class="fas fa-times"></i> Cancel
+            </span>
+            <a href="#home" onclick="closeSidebar()"><i class="fas fa-home"></i> Home</a>
+            <a href="#about" onclick="closeSidebar()"><i class="fas fa-user"></i> About</a>
+            <a href="#services" onclick="closeSidebar()"><i class="fas fa-cogs"></i> Services</a>
+            <a href="#projects" onclick="closeSidebar()"><i class="fas fa-folder-open"></i> Projects</a>
+            <a href="#contact" onclick="closeSidebar()"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+    </header>
+
+    <section class="hero-dark" id="home">
+        <div class="hero-content">
+            <h4>HI, I'M Abhi</h4>
+            <h1>I'M A WEB DESIGNER</h1>
+            <p>Learn to trend and tend to dream...</p>
+            <a href="#projects" class="btn">VIEW MY PROJECTS</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=400&h=500&q=80" alt="Web Designer">
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <h3>Product App</h3>
+                <p>A responsive shopping app with filtering, sorting, and cart functionality.</p>
+                <a href="index.html" class="btn small" target="_blank">View Product App</a>
+            </div>
+            <div class="project-card">
+                <h3>Quiz App</h3>
+                <p>Test your programming knowledge with this interactive quiz application.</p>
+                <a href="./task-3/quiz.html" class="btn small" target="_blank">View Quiz App</a>
+            </div>
+            <div class="project-card">
+                <h3>To-Do List</h3>
+                <p>Organize your tasks with a persistent, editable to-do list app.</p>
+                <a href="todo.html" class="btn small" target="_blank">View To-Do List</a>
+            </div>
+            <div class="project-card">
+                <h3>Contact Form</h3>
+                <p>Get in touch using a modern, validated contact form.</p>
+                <a href="./task-2/contactform.html" class="btn small" target="_blank">View Contact Form</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.illuriabhi8247@gmail.com"></a>illuriabhi8247@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/illuri-abhi-120934328/" target="_blank">linkedin.com/in/illuri-abhi</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 ILLURI ABHI. All rights reserved.</p>
+    </footer>
+    <script>
+        function openSidebar() {
+            document.getElementById("mySidebar").classList.add("open");
+        }
+        function closeSidebar() {
+            document.getElementById("mySidebar").classList.remove("open");
+        }
+    </script>
+</body>
+</html>
