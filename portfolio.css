@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #10131a; /* Changed background color */
+    color: #fff;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #181a23;
+    color: #fffdfd;
+    padding: 0 32px;
+    height: 64px;
+}
+.logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color 0.2s;
+}
+.nav-links li a:hover {
+    color: #f59e42;
+}
+
+.hero-dark {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at top left, #232526 60%, #18191c 100%);
+    padding: 0 20px;
+    gap: 56px;
+}
+.hero-dark h1 {
+    font-size: 2.8rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+.hero-dark p {
+    font-size: 1.2rem;
+    margin-bottom: 28px;
+    color: #e0e7ef;
+}
+.hero-dark .btn {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    display: inline-block;
+}
+.hero-dark .btn:hover {
+    background: #fff;
+    color: #18191c;
+}
+
+/* Services Section */
+.services-section {
+    background: #fff;
+    padding: 48px 0 32px 0;
+    text-align: center;
+}
+.services-section h2 {
+    font-size: 2rem;
+    color: #22223b;
+    margin-bottom: 12px;
+}
+.services-section > p {
+    color: #555;
+    margin-bottom: 32px;
+}
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.service-card {
+    background: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #e0e7ef33;
+    padding: 28px 18px;
+    width: 260px;
+    min-height: 170px;
+    text-align: center;
+}
+.service-card i {
+    font-size: 2.2rem;
+    color: #2563eb;
+    margin-bottom: 10px;
+    display: block;
+}
+.service-card h3 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+.service-card p {
+    color: #444;
+    font-size: 1rem;
+}
+
+/* Projects Section */
+.projects {
+    max-width: 1100px;
+    margin: 48px auto 0 auto;
+    padding: 0 16px;
+}
+.projects h2 {
+    color: #6366f1; /* My Projects heading color */
+    text-align: center;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+.project-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px #a5b4fc33;
+    padding: 24px 18px;
+    width: 250px;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.project-card h3 {
+    margin-top: 0;
+    color: #2563eb;
+}
+.project-card p {
+    color: #444;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.btn.small {
+    padding: 7px 16px;
+    font-size: 0.98rem;
+    margin-top: 10px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s;
+    cursor: pointer;
+    display: inline-block;
+}
+.btn.small:hover {
+    background: #f59e42;
+    color: #23263a;
+}
+
+/* Contact Section */
+.contact {
+    max-width: 600px;
+    margin: 48px auto 0 auto;
+    padding: 0 16px 32px 16px;
+    text-align: center;
+}
+.contact h2 {
+    color: #22d3ee; /* Contact heading color (cyan) */
+    text-align: center;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+.contact a {
+    color: #2563eb;
+    text-decoration: none;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px 0;
+    background: #22223b;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: auto;
+    background: #222;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    display: block;
+}
+.sidebar.open {
+    width: 240px;
+}
+.sidebar a, .sidebar .closebtn {
+    color: #fff !important;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 16px 24px;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    font-size: 1.1em;
+    outline: none;
+    transition: background 0.2s;
+}
+.sidebar a i, .sidebar .closebtn i {
+    color: #fff !important;
+    margin-right: 10px;
+}
+.sidebar a:hover, .sidebar .closebtn:hover {
+    background: #444;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    right: auto;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 24px;
+    width: calc(100% - 48px);
+    background: none;
+}
+.menu-icon {
+    display: none;
+    font-size: 2em;
+    color: #7e7e7e;
+    cursor: pointer;
+    margin-left: 16px;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+@media (max-width: 900px) {
+    .services-list, .project-list {
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 0 8px;
+        gap: 8px;
+    }
+    .hero-dark {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 60px;
+        gap: 0;
+    }
+    .hero-content {
+        margin-right: 0;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+    .hero-image {
+        margin: 0 auto;
+    }
+}
+@media (max-width: 600px) {
+    .hero-dark {
+        padding: 40px 0 32px 0;
+    }
+    .services-list, .project-list {
+        gap: 10px;
+    }
+    .service-card, .project-card {
+        width: 100%;
+        min-width: unset;
+    }
+    .projects, .contact {
+        padding: 0 4px;
+    }
+}
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px; 
+    display: block;
+}
+
+
